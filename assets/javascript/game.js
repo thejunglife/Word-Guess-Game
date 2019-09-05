@@ -6,13 +6,15 @@
 // Number of Guesses Remaning
 
 // list of words to be used
-let gameWords = ['TyrionLannister', 'SansaStark', 'JonSnow', 'DaenerysTargaryen', 'CerseiLannister']
+let gameWords = ['cersielannister', 'daenerystargaryen', 'jonsnow', 'tyrionlannister', 'sansastark']
 
 // will randomize words 
 const randomWord =  function () {
 return gameWords[Math.floor(Math.random() * gameWords.length)]
  .toLowerCase()
+
 };
+
 
 let wins = 0;
 let losses = 0;
@@ -29,9 +31,9 @@ const reset = function () {
   document.getElementById('losses').textContent = 'LOSSES: ' + losses
   lettersGuessed.join(', ')
   document.getElementById('guessesLeft').textContent = 'Guesses Left: ' + guesses
-
-
 }
+
+
 
 const displayWord = function (chosen) {
   let underScore = ''
@@ -54,6 +56,11 @@ if (winStatus) {
 document.getElementById('currentWord').textContent = underScore
 }
 
+
+
+
+
+
 document.onkeyup = function (event) {
   if (event.keyCode >= 65 && event.keyCode <= 90) {
     if (lettersGuessed.indexOf(event.key) === -1) {
@@ -67,6 +74,7 @@ document.onkeyup = function (event) {
       if (guesses <= 0)  {
         alert(`You Lost! The Word Was: ${word}`)
         losses++
+
         reset()
         
       }
