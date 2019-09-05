@@ -1,0 +1,27 @@
+body {
+  background-image: url('../images/game-of-thrones-poster_85627-1920x1200.jpg');
+ width: 100%;
+ height: 100%;
+
+
+}
+
+h1 {
+  color: red;
+}
+
+h3, p, h4 {
+  color: white;
+}
+
+.header {
+  text-align: center;
+}
+
+.right {
+  text-align: center;
+}
+
+.left {
+  text-align: center;
+}

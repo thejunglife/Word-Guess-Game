@@ -5,26 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel ='stylesheet' href="./assets/css/reset.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='./assets/css/style.css'>
 </head>
 <body>
+<div class= 'container'>
+    <div class='row'>
+        <div class= 'col-lg-12'>
+        <h1 class ='header'>Game of Thrones Hangman</h1>
+        <p class ='header'>Press Any Key To Get Started!</p>
+        <img>
+        </div>
+    </div>
 
-  <h1>HANGMAN</h1>
+    <div class = 'row'>
+        <div class = 'col-lg-6'>
+              <h3 class = 'right' id='wins'>WINS:</h3>
+              <h3 class = 'right' id='losses'>LOSSES:</h3>
+        </div>
+    <div class = 'col-lg-6'>
+<h3 class = 'left'>Current Word:</h3>
+<h4 class = 'left' id='currentWord'></h4>
 
-  <img>
+<!-- Where guesses go -->
 
-  <p>Press Any Key To Get Started!</p>
+<h3 class = 'left' id='guessesLeft'>Guesses Left: </h3>
 
-  <h3 id = 'wins'>WINS:</h3>
-  <h3 id = 'losses'>LOSSES:</h3>
-<h3>Current Word:</h3>
-  <h4 id = 'currentWord'></h4>
-
-  <!-- Where guesses go -->
-  
-  <h3 id = 'guessesLeft'>Guesses Left: </h3>
-
-<h3>Letters Already Guessed:</h3>
-  <h4 id = 'lettersGuessed'></h4>
+<h3 class = 'left'>Letters Already Guessed:</h3>
+<h4 class = 'left' id='lettersGuessed'></h4>
+    </div>
+    </div>
+  <div class='row'>
+    <div class ='col-lg-12'>
+      <img>
+    </div>
+  </div>
+</div>
   
 
   <script src= './assets/javascript/game.js'></script>
